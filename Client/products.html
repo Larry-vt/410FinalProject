@@ -14,6 +14,8 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
     <script src="scripts.js"></script>
     <link rel="stylesheet" href="main.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 </head>
 
 <body>
@@ -37,7 +39,7 @@
     <div id="mobile__menu" class="overlay">
         <a class="close">&times;</a>
         <div class="overlay__content">
-            <a href="#">Projects</a>
+            <a href="#">Products</a>
             <a href="#">Services</a>
             <a href="#">Contact</a>
         </div>
@@ -49,15 +51,58 @@
 
 
 
+    <div class="ProductsTabs">
+        <div class="row">
+          <div class="col-md-3">
+            <ul class="nav nav-tabs flex-column custom-tabs" id="tab-menu" style="margin-left: 100x;">
+              <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#Guitars">Guitars</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#Pianos">Pianos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#Keyboards">KeyBoards</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#Drums">Drums</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#Band">Band instruments</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-9">
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="Guitars">
+                <h2>Guitars</h2>
+                <p>Information on guitars we carry</p>
+              </div>
+              <div class="tab-pane fade" id="Pianos">
+                <h2>Pianos</h2>
+                <p>Information on Pianos we carry</p>
+              </div>
+              <div class="tab-pane fade" id="Keyboards">
+                <h2>Keyboards</h2>
+                <p>Information on KeyBoards we carry</p>
+              </div>
+              <div class="tab-pane fade" id="Drums">
+                <h2>Drums</h2>
+                <p>Information on drumsets we carry</p>
+              </div>
+              <div class="tab-pane fade" id="Band">
+                <h2>Band Instruments</h2>
+                <p>Information on Band Instruments we carry</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
 
 
 
-
-
-
-
-
-
+      
     <!-- -->
     <footer class="bg-light text-dark py-3 ">
         <div class="container">

@@ -134,6 +134,34 @@ header {
   background-color: rgba(0, 136, 169, 0.8);
 }
 
+.ProductsTabs {
+  max-width: 800px;
+  margin: 0;
+  text-align: center;
+  padding: 15px 10px;
+}
+.custom-tabs .nav-link {
+  padding: 10px;
+  font-size: 18px;
+  font-style: unset;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(0, 0, 0);
+  border-radius: 0;
+  transition: all 0.15s ease-out;
+}
+
+.custom-tabs .nav-link.active,
+.custom-tabs .nav-link:hover {
+
+  background-color: #0a0202;
+  color: #ffffff;
+  transition: all 0.15s ease-in;
+}
+
+
+
+
+
 /* Mobile Nav */
 
 .menu {
@@ -203,4 +231,16 @@ header {
   .menu {
     display: initial;
   }
+  /* used for on mobile. 
+     It will display only the tabs and whatever is clicked on it will display only its contents
+     Tabs will disappear. but there will be a back button of some sort for the user to click on to view other tabs */
+  .tab-content{
+    display: none;
+  }
 }
+
+
+
+
+
+
