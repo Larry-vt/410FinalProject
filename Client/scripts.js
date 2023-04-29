@@ -12,3 +12,24 @@ fetch(url)
       HoursCell.innerText = rowData.hours;
     });
   });
+
+
+
+
+  const tabs = document.querySelectorAll('.tabs li');
+  const tabContent = document.querySelectorAll('.tab');
+  
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      tabs.forEach(tab => tab.classList.remove('active'));
+      tab.classList.add('active');
+      const tabId = tab.getAttribute('data-tab');
+      tabContent.forEach(content => {
+        content.classList.remove('active');
+        if (content.id === tabId) {
+          content.classList.add('active');
+        }
+      });
+    });
+  });
+  
